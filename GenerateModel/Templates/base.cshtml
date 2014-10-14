@@ -1,0 +1,9 @@
+﻿@using GenerateModel;
+namespace @Model.NameSpace{
+    public class @Model.ModelName{
+    @foreach (var column in @Model.ColumnInfo)
+    {
+        @:public @column.ColumnType @column.ColumnName { get; set; }
+    }
+    }
+}
