@@ -96,8 +96,8 @@
             this.txtConnectionString.Name = "txtConnectionString";
             this.txtConnectionString.Size = new System.Drawing.Size(518, 21);
             this.txtConnectionString.TabIndex = 1;
-            this.txtConnectionString.Text = "Data Source=地址;Initial Catalog=数据库;User ID=用户;Password=数据库;Persist Security Info=" +
-    "True";
+            this.txtConnectionString.Text = "Data Source=地址;Initial Catalog=数据库;User ID=用户;Password=密码;Persist Security Info=T" +
+    "rue";
             // 
             // label3
             // 

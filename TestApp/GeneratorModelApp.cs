@@ -26,10 +26,9 @@ namespace TestApp
             {
                 var columnInfo = dbInfo.GetColumnInfo(tableName);
                 string name = tableName;
-                Task.Factory.StartNew(()=>
-                    File.WriteAllText(dictionaryPath + "\\" + name + ".cs",
-                    ModelGenerator.ModelString(nameSpaceStr, name, 
-                    columnInfo)));
+                File.WriteAllText(dictionaryPath + "\\" + name + ".cs",
+                    ModelGenerator.ModelString(nameSpaceStr, name,
+                        columnInfo));
             }
             MessageBox.Show("成功生成！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
